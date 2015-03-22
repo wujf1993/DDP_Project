@@ -1,3 +1,8 @@
 # DDP_Project
 
-# No Update
+## Updated with Slidify RMD and embedded R code
+
+## Awesome Data Science courses and instructors!!!
+
+## Great R and Shiny tools!!! Thanks!!!
+
