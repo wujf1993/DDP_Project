@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cash Flow Gaming with Shiny</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Cash Flow Gaming with Shiny">
+  <meta name="author" content="J.F. Wu">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Cash Flow Gaming with Shiny</h1>
+    <h2>Develop Data Products - Course Project</h2>
+    <p>J.F. Wu<br/>Analyst, Financial Service</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Just imagine that you are an investor on P2P Lending (e.g., <a href="https://www.lendingclub.com/">Lending Clue</a> or <a href="https://www.prosper.com/">Prosper</a>) notes ...</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>You will need to know how your portfolio is doing with changes in many drivers, such as:</h3>
+
+<ol>
+<li>Account default/close (<strong>Status</strong>)</li>
+<li>Interests collected (<strong>Revenues</strong>) vs. non-collectable debt (<strong>Costs</strong>) </li>
+<li>External Fee/Rates, e.g., vendor fee for collection (<strong>Fees</strong>), annual tax rates (<strong>Rates</strong>)</li>
+</ol>
+
+<h3>Wouldn&#39;t it be boring if you have to do this for multiple scenarios and make new charts every time?</h3>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Shiny provides a simple solution for such a problem</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Rich library of HTML widgets</h3>
+
+<ul>
+<li>Flexible page design, Table outputs and Plots, various Inputs, and many more ...</li>
+</ul>
+
+<h3>Seamless connections with R data and codes</h3>
+
+<ul>
+<li>Easy to test offline and deploy online - exactly what is needed for analysis</li>
+</ul>
+
+<h3>Most importantly, excellent support and open/free resources!!!</h3>
+
+<ul>
+<li>Easy-to-find examples from <a href="http://shiny.rstudio.com/gallery/">Shiny Apps Gallery</a> with detailed codes</li>
+</ul>
+
+<h3>Many thanks to the Shiny team and Data Science instructors - YOU ROCK!!!</h3>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Now you can see how Shiny could give a big help to analyze your portfolio</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>A Demo version is available <a href="https://wujf1933.shinyapps.io/DDP_Demo/">here</a> - with faked financial terms and data</h3>
+
+<h3>The Demo supports the following functions:</h3>
+
+<ul>
+<li>Portofolio value changes if individual drivers are changed for a given range</li>
+<li>Step by step portfolio value changes with new external Fee/Rate values</li>
+<li>Valuations, as well as revenue/cost items changes with varialbe driver levels over time</li>
+</ul>
+
+<h3>The real version (also by me) is a big hit at work !!!</h3>
+
+<ul>
+<li>Instant, Interactive and Intuitive gamings</li>
+<li>Impressive data summary charts to grab for further uses</li>
+<li>Expandible and easy to use features, with more expected to come ... </li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Now I have to show embedded R codes for credit :)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Here is how random driver and gaming levels are generated with Code <a href="https://github.com/wujf1993/DDP_Project">here</a></p>
+
+<p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Just imagine that you are an investor on P2P Lending (e.g., <a href="https://www.lendingclub.com/">Lending Clue</a> or <a href="https://www.prosper.com/">Prosper</a>) notes ...'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Shiny provides a simple solution for such a problem'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Now you can see how Shiny could give a big help to analyze your portfolio'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Now I have to show embedded R codes for credit :)'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
